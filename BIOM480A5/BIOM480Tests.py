@@ -178,7 +178,7 @@ def permutation_test(a, b, n_permutations=10000, statistic=None):
         if np.abs(perm_stat) >= np.abs(observed_stat):
             count += 1
     
-    # Calculate the p-value
+    # Calculate and save the p-value
     p_value = count / n_permutations
     
     return p_value, observed_stat
